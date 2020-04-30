@@ -2,11 +2,13 @@ let walker;
 
 function setup() {
   createCanvas(640,360);
-  walker = new Walker();
   background(127);
+  walker = new Walker();
+  
 }
 
 function draw() {
+  //background(127);
   walker.step();
   walker.render();
 }
@@ -18,7 +20,10 @@ class Walker {
   }
   
   render(){
-	  //stroke(0);
+	  //stroke(200);
+	  //strokeWeight(4);
+	  //ellipse(this.x,this.y,50,25);	  
+	  //point(this.x+50,this.y+20);	
 	  point(this.x,this.y);	  
   }
   
